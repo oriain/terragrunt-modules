@@ -4,6 +4,6 @@ provider "null" {
 
 resource "null_resource" "hello" {
   provisioner local-exec {
-    command = "echo why should I say ${var.greeting}"
+    command = "echo I love saying ${var.greeting}"
   }
 }
