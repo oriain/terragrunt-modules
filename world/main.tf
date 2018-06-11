@@ -4,6 +4,6 @@ provider "null" {
 
 resource "null_resource" "world" {
   provisioner local-exec {
-    command = "echo world"
+    command = "echo ${var.name}"
   }
 }
